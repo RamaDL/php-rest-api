@@ -1,2 +1,2 @@
 # agile-engine-code-sample
-PHP third party API integration
+PHP app with third party API integration
