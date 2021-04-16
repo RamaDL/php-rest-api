@@ -66,31 +66,52 @@ class User extends Model implements ModelInterface{
         return $this->active;
     }
 
-    public function getCreatedAt(){
+    public function getCreatedAt()
+    {
         return $this->created_at;
     }
 
-    public function getUpdatedAt(){
+    public function getUpdatedAt()
+    {
         return $this->updated_at;
     }
 
-    public function getDeletedAt(){
+    public function getDeletedAt()
+    {
         return $this->deleted_at;
     }
 
     //Setters
-    public function setFirstName($first_name){
+    public function setFirstName($first_name)
+    {
         $this->first_name = $first_name;
     }
 
-    public function setLastName($last_name){
+    public function setLastName($last_name)
+    {
         $this->last_name = $last_name;
     }
 
-    public function setEmail($email){
+    public function setEmail($email)
+    {
         $this->email = $email;
     }
-    
+
+    public function setBirthDay($birth_day)
+    {
+        $this->birth_day = $birth_day;
+    }
+
+    public function setActive($active)
+    {
+        $this->active = $active;
+    }
+
+    public function toJson()
+    {
+        //echo json_encode(get_object_vars($this));
+        return json_decode((string) json_encode(get_object_vars($this)), true);
+    }
 
     public function all()
     {

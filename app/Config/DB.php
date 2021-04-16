@@ -24,4 +24,9 @@ class DB
             exit($e->getMessage());
         }
     }
+
+    public function getConnection()
+    {
+        return $this->dbConnection;
+    }
 }
