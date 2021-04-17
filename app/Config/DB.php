@@ -4,7 +4,7 @@ namespace App\Config;
 
 class DB
 {
-    private $dbConnection = null;
+    protected $db_connection = null;
 
     public function __construct()
     {
@@ -15,11 +15,13 @@ class DB
         $pass = $_ENV['DB_PASSWORD'];
 
         try {
-            $this->dbConnection = new \PDO(
-                "mysql:host=$host;port=$port;charset=utf8mb4",
+            $this->db_connection = new \PDO(
+                "mysql:host=$host;port=$port;dbname=$db;charset=utf8",
                 $user,
                 $pass
             );
+            $this->db_connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->db_connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
         } catch (\PDOException $e) {
             exit($e->getMessage());
         }
@@ -27,6 +29,6 @@ class DB
 
     public function getConnection()
     {
-        return $this->dbConnection;
+        return $this->db_connection;
     }
 }
