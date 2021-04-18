@@ -9,7 +9,7 @@ Rest API concepts implementation.
 
 ## Steps
 1º Run sql script for DB creation.  
-2º Create an .env file in the project root directory and setup the environment variables use .env.example as example of the viriables required.   
+2º Create an .env file in the project root directory and setup the environment variables (check .env.example for required env vars).   
 3º Run the init.sh file to start the service.   
 
 
