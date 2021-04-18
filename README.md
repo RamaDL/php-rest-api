@@ -19,4 +19,3 @@ GET /user/{id} --> get single user information where user id is equal to {id}
 POST /user --> create new user
 DELETE /user/{id} --> logical delete of user where user id is equal to {id}
 PUT /user/{id} --> update user information where user id is equal to {id}
-
