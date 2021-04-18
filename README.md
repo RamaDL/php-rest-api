@@ -1,13 +1,10 @@
 # agile-engine-code-sample
 PHP Rest API for user CRUD.
 
-## Project goals
-Project scaffolding.  
-Project configuration.  
-Usage of environment variables.  
-Basic SQL.  
+## Project goals 
 TDD.  
-Rest API concepts implementation.  
+OOP.  
+Rest API.  
 
 ## Steps
 1º Run sql script for DB creation.  
