@@ -2,10 +2,10 @@
 PHP Rest API for user CRUD.
 
 ## Project goals
-Project skafolding
+Project scaffolding
 Project configuration
 Usage of environment variables
-Understanding of Rest API
+Rest API concepts implementation
 
 ## Steps
 1º Run sql script for DB creation
