@@ -4,7 +4,9 @@ PHP Rest API for user CRUD.
 ## Project goals
 Project scaffolding.  
 Project configuration.  
-Usage of environment variables.  
+Usage of environment variables.
+Basic SQL.  
+TDD.  
 Rest API concepts implementation.  
 
 ## Steps
