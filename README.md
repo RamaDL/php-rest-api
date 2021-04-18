@@ -1,5 +1,5 @@
 # agile-engine-code-sample
-PHP app with third party API integration
+PHP Rest API for user CRUD.
 
 ## Project goals
 Project skafolding
